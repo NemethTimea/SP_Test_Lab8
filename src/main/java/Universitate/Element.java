@@ -10,4 +10,7 @@ public interface Element {
     default Element get(Integer index){
         throw new UnsupportedOperationException("Don't get.");
     };
+    default void accept(Visitor visitor){
+        throw new UnsupportedOperationException("Don't get.");
+    };
 }
